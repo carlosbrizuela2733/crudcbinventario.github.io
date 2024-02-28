@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crud de Ingreso de mercadería</title>
+  <link rel="stylesheet" href="styles.css">
+
+<!-- Firestore-->>
+<script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore-compat.js"></script>
+
+<!-- Carga de tu archivo app.js -->
+<script src="app.js"></script>
+
+</head>
+<body>
+  <script> scr="app.js"</script>
+    <div class="container">
+    <h1>CRUD de inventario</h1>
+    <form id="formulario">
+      <label for="codbarra">Codigo:</label>
+      <input type="text" id="codbarra" required>
+
+      <label for="articulo">Articulo:</label>
+      <input type="text" id="articulo" required>
+      
+      <label for="cantidad">Cantidad:</label>
+      <input type="text" id="cantidad" required>
+      
+      <label for="precio">precio:</label>
+      <input type="text" id="precio" required>
+
+      <button type="submit">Agrega</button>
+      <button type="submit">Actualiza</button>
+      <button type="submit">Elimina</button>
+    </form>
+    <img id="logo" src="imagen.jpg" alt="Logo">
+  </div>  
+</body>
+</html>
+
